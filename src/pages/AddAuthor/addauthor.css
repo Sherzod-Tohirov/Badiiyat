@@ -1,0 +1,22 @@
+.addauthor__form {
+    display: flex;
+    justify-content: center;
+}
+
+.addauthor__left-wrapper {
+    padding: 136px 130px;
+    background-color: var(--drag-bg);
+}
+
+.addauthor__right-wrapper {
+    padding: 48px 123px;
+}
+
+.addauthor__title {
+    margin-bottom: 12px;
+    font-family: "Poppins";
+    font-size: 32px;
+    font-weight: 600;
+    line-height: normal;
+    color: var(--add-page-text-color);
+}

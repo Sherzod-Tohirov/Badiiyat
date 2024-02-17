@@ -1,0 +1,238 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --body-bg: #ffffff;
+  --primary-text-color: #000000;
+  --secondary-text-color: #ffffff;
+  --third-text-color: #d1b89d;
+  --auth-input-border-color: #b4b4bb;
+  --auth-input-bg: #ffffff;
+  --auth-input-color: #aaaaaa;
+  --main-btn-color: #ffffff;
+  --main-btn-bg-color: #152540;
+  --header-sub-list-bg: #f5f5f5;
+  --header-sub-link-text-color: #000000;
+  --header-link-color: #0d0d0d;
+  --search-input-bg: #f5f5f5;
+  --search-input-color: rgba(13, 13, 13, 0.30);
+  --search-input-placeholder-color: rgba(13, 13, 13, 0.30);
+  --search-button-text-color: #efdac3;
+  --categorylist-color: rgba(13, 13, 13, 0.60);
+  --maincard-bg: #f5f5f5;
+  --maincard-title-color: #000000;
+  --maincard-desc-color:rgba(0, 0, 0, 0.60);
+  --book-card-title-color: #000000;
+  --book-card-desc-color: rgba(13, 13, 13, 0.60); 
+  --page-loader-overlay-bg: rgba(0, 0, 0, 0.3);
+  --authorbooks-btn-text-color: #0d0d0d;
+  --aboutbook-info-text-color: #0d0d0d;
+  --aboutbook-info-desc-color: rgba(13, 13, 13, 0.60);
+  --aboutbook-info-data-color: rgba(13, 13, 13, 0.60);
+  --about-desc-text-color: rgba(13, 13, 13, 0.80);
+  --profile-menu-link-bg: #f3f6f9;
+  --profile-menu-link-active-bg: #dde6f5;
+  --profile-menu-link-color: #464e5f;
+  --profile-menu-link-active-color: #152540;
+  --profile-menu-link-before-color: #3699FF;
+  --profile-menu-link-before-bg: #e5eaee;
+  --profile-menu-link-before-active-bg: #152540;
+  --profile-menu-link-before-active-color: #ffffff;
+  --profile-menu-label-color: #464E5F;
+  --profile-menu-input-color: #464E5F;
+  --profile-menu-input-bg: #f3f6f9;
+  --profile-menu-input-info-color: #b5b5c3; 
+  --profile-menu-link-before-border-color: transparent;
+  --profile-main-title-color: #212121;
+  --profile-main-photo-label-bg: #f3f6f9;
+  --profile-main-separator-line-bg: #ecf0f3;
+  --profile-main-form-btn-color: #ffffff;
+  --profile-main-form-btn-bg: #152540;
+  --profile-main-toggle-color: #3699ff;
+  --profile-main-toggle-input-bg: #f3f6f9;
+  --drag-input-label-bg: #f8f8f8;
+  --drag-input-label-color: #0000003b;
+  --drag-bg: rgba(243, 243, 243, 0.93);
+  --drag-input-label-border-color: rgba(0, 0, 0, 0.30);
+  --about-author-desc-color: rgba(13, 13, 13, 0.80);
+  --about-author-date-desc-color: rgba(13, 13, 13, 0.60);
+  --add-page-text-color: #000000; 
+  --add-page-input-border-color: #b4b4bb;
+  --add-page-input-bg: #ffffff;
+  --add-page-input-color: #aaaaaa;
+}
+
+.dark {
+  --body-bg: #191919;
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #ffffff;
+  --third-text-color: #c9ac8c;
+  --auth-input-border-color: #b4b4bb;
+  --auth-input-bg: transparent;
+  --auth-input-color: #aaaaaa;
+  --main-btn-color: #000000;
+  --main-btn-bg-color: #ffffff;
+  --header-sub-list-bg: #c9ac8c;
+  --header-sub-link-text-color: #000000;
+  --header-link-color: #ffffff;
+  --search-input-bg: #404040;
+  --search-input-color: #ffffff;
+  --search-input-placeholder-color: rgba(255, 255, 255, 0.30);
+  --search-button-text-color: #3c2710;
+  --categorylist-color:rgba(255, 255, 255, 0.60);
+  --maincard-bg: #1e1e1e; 
+  --maincard-title-color: #c9ac8c;
+  --maincard-desc-color: rgba(255, 255, 255, 0.60);
+  --book-card-title-color: #c9ac8c;
+  --book-card-desc-color: rgba(255, 255, 255, 0.60); 
+  --page-loader-overlay-bg: #efdac368;
+  --authorbooks-btn-text-color: #ffffff;
+  --aboutbook-info-text-color: #0d0d0d;
+  --aboutbook-info-desc-color: #ffffff99;
+  --aboutbook-info-data-color: #ffffff;
+  --about-desc-text-color: #ffffffcc;
+  --profile-menu-link-bg: #2d2d2d;
+  --profile-menu-link-active-bg: #f3f6f9;
+  --profile-menu-link-color: #ffffff;
+  --profile-menu-link-active-color: #000000;
+  --profile-menu-link-before-color: #ffffff;
+  --profile-menu-link-before-bg: transparent;
+  --profile-menu-link-before-active-bg: #000000;
+  --profile-menu-link-before-active-color: #ffffff;
+  --profile-menu-label-color: #f3f6f9;
+  --profile-menu-input-color: #000000;
+  --profile-menu-input-bg: #f3f6f9;
+  --profile-menu-input-info-color: #b5b5c5; 
+  --profile-menu-link-before-border-color: #e5eaee;
+  --profile-main-title-color: #dedede;
+  --profile-main-photo-label-bg: #161616;
+  --profile-main-separator-line-bg: #161d23;
+  --profile-main-form-btn-color: #0d0d0d;
+  --profile-main-form-btn-bg: #f1f6ff;
+  --profile-main-toggle-color: #3699ff;
+  --profile-main-toggle-input-bg: #f3f6f9;
+  --drag-input-label-bg: #4d4d4d;
+  --drag-input-label-color: #ffffff;
+  --drag-input-label-border-color: rgba(255, 255, 255, 0.30);
+  --drag-bg: #1b1b1b;
+  --about-author-desc-color: rgba(255, 255, 255, 0.80);
+  --about-author-date-desc-color: rgba(255, 255, 255, 0.60);
+  --add-page-text-color: #ffffff; 
+  --add-page-input-border-color: #b4b4bb;
+  --add-page-input-bg: transparent;
+  --add-page-input-color: #ffffff;
+}
+
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-weight: 400;
+  src: url('./assets/fonts/poppins/regular.woff') format('woff'),
+       url('./assets/fonts/poppins/regular.woff2') format('woff2')
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-weight: 500;
+  src: url('./assets/fonts/poppins/medium.woff') format('woff'),
+       url('./assets/fonts/poppins/medium.woff2') format('woff2')
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-weight: 600;
+  src: url('./assets/fonts/poppins/semibold.woff') format('woff'),
+       url('./assets/fonts/poppins/semibold.woff2') format('woff2')
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-weight: 700;
+  src: url('./assets/fonts/poppins/bold.woff') format('woff'),
+       url('./assets/fonts/poppins/bold.woff2') format('woff2')
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/roboto/regular.woff') format('woff'),
+       url('./assets/fonts/roboto/regular.woff2') format('woff2')
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./assets/fonts/redHatDisplay/medium.woff') format('woff'),
+       url('./assets/fonts/redHatDisplay/medium.woff2') format('woff2')
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Rotterburg Stylish FREE';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/rotterburgStylish/rotterburg.woff') format('woff'),
+       url('./assets/fonts/rotterburgStylish/rotterburg.woff2') format('woff2')
+}
+
+
+body {
+  background: var(--body-bg);
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+
+
+
+.auth__btn {
+  max-width: 328px;
+  width: 100%;
+  padding: 5px 20px;
+  font-family: "Red Hat Display";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 36px; 
+  text-align: center;
+  color: var(--main-btn-color);
+  background-color: var(--main-btn-bg-color);
+  border-radius: 24px;
+}
+
+.auth__form-wrapper {
+  padding: 75px 134px 136px 108px;
+}
+
+
+.auth__title {
+  margin-bottom: 10px;
+  font-family: "Arial Black";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  color: var(--primary-text-color);
+}
+
+.auth__desc {
+  margin-bottom: 21px;
+  font-family: "Roboto";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--primary-text-color);
+}
+
+.slick-prev,
+.slick-next {
+  display: none !important;
+}

@@ -1,0 +1,36 @@
+.header__link {
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 144.4%;
+    color: var(--header-link-color);
+    opacity: 0.3;
+    transition: 0.3s;
+}
+
+.active-link {
+    opacity: 1;
+}
+
+.header__btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: 0.3s;
+}
+
+.header__btn:active {
+    transform: scale(0.95);
+}
+
+.header__btn::after {
+    width: 12px;
+    height: 7px;
+    content: '';
+    background: url("../../assets/images/arrdn.svg") no-repeat center;
+}
+
+.dark .header__btn::after {
+    background: url("../../assets/images/arrdndark.svg") no-repeat center;
+}
+

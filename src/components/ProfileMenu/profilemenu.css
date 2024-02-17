@@ -1,0 +1,60 @@
+.profilemenu__list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.profilemenu__link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 22px 23px 23px;
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    color: var(--profile-menu-link-color);
+    border-radius: 4px 4px 0px 0px;
+    background-color: var(--profile-menu-link-bg);
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+.profilemenu__link::before {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-family: "Poppins";
+    font-weight: 600;
+    line-height: normal;
+    border: 1px solid var(--profile-menu-link-before-border-color);
+    border-radius: 4px;
+    color: var(--profile-menu-link-before-color);
+    background-color: var(--profile-menu-link-before-bg);
+    content: '';
+}
+
+.profilemenu__item:first-child .profilemenu__link::before {
+    content: '1';
+}
+
+.profilemenu__item:nth-child(2) .profilemenu__link::before {
+    content: '2';
+}
+
+.profilemenu__item:nth-child(3) .profilemenu__link::before {
+    content: '3';
+}
+
+.active-profile-link {
+    background-color: var(--profile-menu-link-active-bg);
+    color: var(--profile-menu-link-active-color);
+    opacity: 1;
+}
+
+.active-profile-link::before {
+    background-color: var(--profile-menu-link-before-active-bg);
+    color: var(--profile-menu-link-before-active-color);
+}

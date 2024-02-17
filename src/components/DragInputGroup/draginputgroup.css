@@ -1,0 +1,47 @@
+.drag-label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 315.5px;
+    padding: 161px 73px;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 12px;
+    line-height: normal;
+    color: var(--drag-input-label-color);
+    border-radius: 17px;
+    border: 1px dashed var(--drag-input-label-border-color);
+    background-color: var(--drag-input-label-bg);
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.drag-preview {
+    position: absolute;
+    max-width: 100px;
+    max-height: 150px;
+    bottom: 20px;
+    padding-top: 20px;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.drag-active {
+    opacity: 1 !important;
+}
+
+.drag-active::before {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    padding: 20px;
+    content: 'Upload your image here...';
+    opacity: 1;
+}

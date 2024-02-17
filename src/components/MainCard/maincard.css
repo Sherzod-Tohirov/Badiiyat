@@ -1,0 +1,45 @@
+.maincard__item {
+    width: 295px;
+    border-radius: 22px;
+    background-color: var(--maincard-bg);
+}
+
+.maincard__link {
+    display: flex;
+    flex-direction: column;
+}
+
+.maincard__img {
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px
+    ;
+}
+
+.maincard__details {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 16px 63px;
+    background: url("../../assets/images/maincardpattern1.svg") calc(50% + 140px) calc(-33px) no-repeat,
+    url("../../assets/images/maincardpattern2.svg") calc(-57px) calc(50% + 92px) no-repeat
+                
+}
+
+.dark .maincard__details {
+    background: url("../../assets/images/maincardpatterndark1.svg") calc(50% + 140px) calc(-33px) no-repeat,
+    url("../../assets/images/maincardpatterndark2.svg") calc(-57px) calc(50% + 92px) no-repeat
+}
+
+.maincard__title {
+    margin-bottom: 9px;
+    font-family: "Poppins";
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--maincard-title-color);
+}
+
+.maincard__desc {
+    font-family: "Poppins";
+    line-height: normal;
+    color: var( --maincard-desc-color);
+}
+

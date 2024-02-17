@@ -1,0 +1,122 @@
+/author:
+    post:
+      tags:
+        - Author
+      security:
+        - Bearer: []
+      summary: Creat new author
+      consumes:
+      - multipart/form-data
+      parameters:
+        - name: first_name
+          in: formData
+          description: The author first name
+          required: true
+          type: string
+        - name: last_name
+          in: formData   # <-----
+          description: The author last name
+          required: true
+          type: string
+        - name: date_of_birth
+          in: formData   # <-----
+          description: The author date of birth
+          type: string
+          example: "2019"
+          required: true
+        - name: date_of_death
+          in: formData   # <-----
+          description: The author date of death
+          type: string
+          example: "2019"
+        - name: country
+          in: formData   # <-----
+          description: The author country
+          required: true
+          type: string
+        - name: genre_id
+          in: formData   # <-----
+          description: The book author genre id
+          required: true
+          type: number
+        - name: bio
+          in: formData   # <-----
+          description: The author bio
+          required: true
+          type: string
+        - name: image
+          in: formData   # <-----
+          description: The uploaded image
+          required: true
+          type: file
+      responses: 
+        200: 
+          description: The new author
+
+
+/author/genreId/{id}:
+  get:
+      tags:
+        - Author
+      summary: Get the Author by genre id
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: The genre id
+      responses: 
+        200: 
+          description: The Author 
+
+/author/authorId/{id}:
+  get:
+      tags:
+        - Author
+      security:
+        - Bearer: []
+      summary: Get the Author by id
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: The Author id
+      responses: 
+        200: 
+          description: The Author
+
+/author/books/{id}:
+  get:
+      tags:
+        - Author
+      security:
+        - Bearer: []
+      summary: Get the Author books
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: The Author id
+      responses: 
+        200: 
+          description: The Author  
+
+/author/search:
+  get:
+      tags:
+        - Author
+      summary: Get the Author by full name search
+      parameters:
+        - in: query
+          name: author
+          type: string
+          required: true
+          description: The author full name
+      responses: 
+        200: 
+          description: The Author 

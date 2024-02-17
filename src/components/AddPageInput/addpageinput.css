@@ -1,0 +1,39 @@
+.addpageinput {
+    width: 330px;
+    padding: 13px 22px 12px;
+    border-radius: 10px;
+    border: 1px solid var(--add-page-input-border-color);
+    background-color: var(--add-page-input-bg);
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--add-page-input-color);
+    appearance: none;
+}
+
+.addpageinput::placeholder {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--add-page-input-color);
+}
+
+.addpageinput[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}   
+
+.add-select-input {
+    background: var(--add-page-input-bg) url("../../assets/images/arrdnselect.svg") no-repeat center right 22px;
+}
+
+.dark .add-select-input {
+    background: #191919 url("../../assets/images/arrdnselectdark.svg") no-repeat center right 22px;
+}
+
+.add-textarea-input {
+    min-height: 82px;
+    max-height: 130px;
+    /* resize: none; */
+}

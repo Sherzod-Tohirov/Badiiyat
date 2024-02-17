@@ -1,0 +1,29 @@
+.bookcard__item {
+    width: 190px;
+}
+
+.bookcard__link {
+    display: flex;
+    flex-direction: column;
+}
+
+.bookcard__details {
+    display: flex;
+    flex-direction: column;
+    padding-top: 12px;
+    gap: 6px;
+}
+
+.bookcard__title {
+    color: var(--book-card-title-color);
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.bookcard__desc {
+    color: var(--book-card-desc-color);
+    font-family: "Poppins";
+    line-height: normal;
+}

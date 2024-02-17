@@ -1,0 +1,22 @@
+.addbook__form {
+    display: flex;
+    justify-content: center;
+}
+
+.addbook__left-wrapper {
+    padding: 136px 130px;
+    background-color: var(--drag-bg);
+}
+
+.addbook__right-wrapper {
+    padding: 48px 123px;
+}
+
+.addbook__title {
+    margin-bottom: 12px;
+    font-family: "Poppins";
+    font-size: 32px;
+    font-weight: 600;
+    line-height: normal;
+    color: var(--add-page-text-color);
+}

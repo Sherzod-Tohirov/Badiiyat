@@ -1,0 +1,6 @@
+.separator-line {
+    display: flex;
+    width: 100%;
+    height: 1px;
+    background-color: var(--profile-main-separator-line-bg);
+}

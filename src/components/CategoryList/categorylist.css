@@ -1,0 +1,20 @@
+.main__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 34px;
+}
+
+.main__btn {
+    padding: 10px;
+    font-family: "Poppins";
+    font-size: 18px;
+    line-height: normal;
+    color: var(--categorylist-color);
+    opacity: 0.6;
+}
+
+.active-btn {
+    opacity: 1;
+    color: var(--third-text-color);
+}

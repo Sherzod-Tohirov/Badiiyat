@@ -1,0 +1,9 @@
+.not-found-desc {
+    font-size: 28px;
+    line-height: 150%;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    color: var(--third-text-color);
+}

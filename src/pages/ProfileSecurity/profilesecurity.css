@@ -1,0 +1,16 @@
+.profilesecurity__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 68px 247px 147px;
+    justify-content: center;
+}
+
+.profilesecurity__title {
+    margin-bottom: 32px;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--profile-main-title-color);
+}

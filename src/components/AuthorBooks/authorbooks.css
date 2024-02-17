@@ -1,0 +1,23 @@
+.authorbooks__title {
+    font-family: "Poppins";
+    font-size: 31px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    color: var(--third-text-color);
+}
+
+.authorbooks__btn {
+    font-family: "Poppins";
+    line-height: normal;
+    text-align: center;
+    color: var(--authorbooks-btn-text-color);
+}
+
+.authorbooks__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    list-style-type: none;
+}

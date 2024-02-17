@@ -1,0 +1,36 @@
+.profileinputgroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.profileinputgroup__label {
+    margin-bottom: 7px;
+    font-family: "Poppins";
+    font-size: 13px;
+    line-height: normal;
+    color: var(--profile-menu-label-color);
+}
+
+.profileinputgroup__info {
+    font-family: "Poppins";
+    font-size: 12px;
+    line-height: normal;
+    color: var(--profile-menu-input-info-color);
+}
+
+.profileinputgroup__input {
+    width: 100%;
+    margin-bottom: 3px;
+    padding: 12px 20px 11px;
+    font-family: "Poppins";
+    font-size: 14px;
+    line-height: normal;
+    color: var(--profile-menu-input-color);
+    border-radius: 4px;
+    background-color: var(--profile-menu-input-bg);
+}
+
+.select-input {
+    appearance: none;
+    background: var(--profile-menu-input-bg) url("../../assets/images/arrdnselect.svg") no-repeat center right 10px;
+}

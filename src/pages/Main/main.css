@@ -1,0 +1,17 @@
+.main {
+    padding-bottom: 138px;
+}
+
+.main__card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    .main__card-list {
+        grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+    }
+}

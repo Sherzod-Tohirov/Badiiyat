@@ -1,0 +1,38 @@
+.profilemain__form {
+    display: flex;
+    gap: 109px;
+    width: 100%;
+    padding: 83px 103px 89px 85px; 
+}
+
+.profilemain__title {
+    margin-bottom: 32px;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--profile-main-title-color);
+}
+
+.profilemain__image-label {
+    position: absolute;
+    bottom:-15px;
+    right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: url("../../assets/images/camera.svg") no-repeat center;
+    border-radius: 8px;
+    background-color: var(--profile-main-photo-label-bg);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.profilemain__image-label:active {
+    transform: scale(0.95);
+}
+
+

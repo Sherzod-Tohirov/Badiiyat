@@ -1,0 +1,7 @@
+.categories__title {
+    margin-bottom: 12px;
+    font-family: "Poppins";
+    font-size: 32px;
+    line-height: normal;
+    color: var(--third-text-color);
+}

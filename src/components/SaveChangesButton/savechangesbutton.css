@@ -1,0 +1,17 @@
+
+.save__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-width: 142px; 
+    margin-left: auto;
+    padding: 12px 20px 11px 26px;
+    font-family: "Poppins";
+    font-size: 13px;
+    font-weight: 600;
+    line-height: normal;
+    color: var(--profile-main-form-btn-color);
+    border-radius: 4px;
+    background-color: var(--profile-main-form-btn-bg) !important;
+}

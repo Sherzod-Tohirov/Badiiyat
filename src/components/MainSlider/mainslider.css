@@ -1,0 +1,62 @@
+.slick-slider div {
+    border-radius: 21px !important;
+}
+
+
+.slider__item {
+    display: flex;
+    width: 100%;
+    min-height: 347px;
+    padding: 46px 87px 101px;
+    background: url("../../assets/images/slider1.svg") no-repeat center;
+    background-size: cover;
+}
+
+.slider__title-wrapper {
+    width: max-content;
+    max-width: 450px;
+}
+
+.slider__title {
+    color: var(--third-text-color);
+    font-family: "Rotterburg Stylish FREE";
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.slick-dots {
+    display: flex  !important;
+    width: 300px !important;
+    gap: 11px;
+    left: 87px;
+    top: 257px;
+}
+
+.slick-dots li {
+    display: flex;
+    width: 58px !important;
+    height: 3px !important;
+    margin: 0 !important;
+    border-radius: 10px !important;
+}
+
+.slick-dots button {
+    width: 0 !important;
+    height: 0 !important;
+}
+
+.slick-dots button::before {
+    content: '' !important;
+    display: flex;
+    width: 58px !important;
+    height: 3px !important;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.60);
+}
+
+.slick-active {
+    background-color: #fff !important;
+}
+

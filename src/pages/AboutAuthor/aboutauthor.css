@@ -1,0 +1,30 @@
+.author__title {
+    margin-bottom: 8px;
+    font-family: "Poppins";
+    font-size: 48px;
+    line-height: normal;
+    text-align: start;
+    color:var(--third-text-color);
+}
+
+.author__desc {
+    margin-bottom: 44px;
+    font-family: "Poppins";
+    line-height: normal;
+    color: var(--about-author-desc-color);
+}
+
+.author__date-desc {
+    font-family: "Poppins";
+    font-size: 12px;
+    line-height: normal;
+    color: var(--about-author-date-desc-color);
+}
+
+.author__year-desc, 
+.author__line-desc {
+    font-family: "Poppins";
+    font-size: 39px;
+    line-height: 144.4%;
+    color: var(--third-text-color);
+}

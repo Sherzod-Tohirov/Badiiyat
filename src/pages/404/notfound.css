@@ -1,0 +1,15 @@
+.page-not-found {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--body-bg);
+}
+
+.page-not-found-desc {
+    font-size: 400%;
+    line-height: 120%;
+    color: var(--third-text-color);
+    text-align: center;
+}

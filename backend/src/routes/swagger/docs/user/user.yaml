@@ -1,0 +1,121 @@
+/user/register:
+    post:
+      tags:
+        - User
+      summary: User sign-up
+      consumes:
+        - application/json
+      parameters:
+        - in: body
+          name: user
+          description: The user to create.
+          schema:
+            type: object
+            properties:
+              first_name:
+                type: string
+              last_name:
+                type: string
+              phone:
+                type: string
+              email:
+                type: string
+              password:
+                type: string
+      responses: 
+        200: 
+          description: The new user
+
+/user/login:
+    post:
+      tags:
+        - User
+      summary: User sign-in
+      consumes:
+        - application/json
+      parameters:
+        - in: body
+          name: user
+          description: The user to sign-in.
+          schema:
+            type: object
+            properties:
+              email:
+                type: string
+              password:
+                type: string
+      responses: 
+        200: 
+          description: User login
+
+/user/me:
+    get:
+      tags:
+        - User
+      security:
+        - Bearer: []
+      summary: Current user info
+      responses:
+        200:
+          description: Get user 
+
+
+/user/account:
+    put:
+      tags:
+        - User
+      security:
+        - Bearer: []
+      summary: Update current User
+      consumes:
+      - multipart/form-data
+      parameters:
+        - name: first_name
+          in: formData
+          description: The new first name
+          required: true
+          type: string
+        - name: last_name
+          in: formData   # <-----
+          description: The new last name
+          required: true
+          type: string
+        - name: phone
+          in: formData   # <-----
+          description: The new phone number
+          required: true
+          type: string
+        - name: image
+          in: formData   # <-----
+          description: The new image profile
+          required: true
+          type: file
+      responses: 
+        200: 
+          description: The new book
+
+/user/secutiry:
+    put:
+      tags:
+        - User
+      security:
+        - Bearer: []
+      summary: User update security
+      consumes:
+        - application/json
+      parameters:
+        - in: body
+          name: user
+          description: The user to password
+          schema:
+            type: object
+            properties:
+              email:
+                type: string
+              currentPassword:
+                type: string
+              newPassword:
+                type: string
+      responses: 
+        200: 
+          description: User login

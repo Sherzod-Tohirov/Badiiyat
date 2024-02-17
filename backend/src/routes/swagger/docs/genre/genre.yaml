@@ -1,0 +1,8 @@
+/genre:
+    get:
+      tags:
+        - Genre
+      summary: Get all Genre
+      responses:
+        200:
+          description: Get genre 

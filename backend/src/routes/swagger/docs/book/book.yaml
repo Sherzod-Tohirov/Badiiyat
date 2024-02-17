@@ -1,0 +1,104 @@
+/book:
+    post:
+      tags:
+        - Book
+      security:
+        - Bearer: []
+      summary: Creat new book
+      consumes:
+      - multipart/form-data
+      parameters:
+        - name: title
+          in: formData
+          description: The book title
+          required: true
+          type: string
+        - name: page
+          in: formData   # <-----
+          description: The book page
+          required: true
+          type: string
+        - name: year
+          in: formData   # <-----
+          description: The book release year
+          required: true
+          type: number
+        - name: price
+          in: formData   # <-----
+          description: The book price
+          required: true
+          type: number
+        - name: genre_id
+          in: formData   # <-----
+          description: The book genre id
+          required: true
+          type: number
+        - name: author_id
+          in: formData   # <-----
+          description: The book author id  price
+          required: true
+          type: number
+        - name: description
+          in: formData   # <-----
+          description: The book description
+          required: true
+          type: string
+        - name: image
+          in: formData   # <-----
+          description: The uploaded image
+          required: true
+          type: file
+      responses: 
+        200: 
+          description: The new book
+
+/book/genreId/{id}:
+  get:
+      tags:
+        - Book
+      summary: Get the Book by genre id
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: The genre id
+      responses: 
+        200: 
+          description: The book 
+
+
+/book/bookId/{id}:
+  
+  get:
+      tags:
+        - Book
+      security:
+        - Bearer: []
+      summary: Get the Book by id
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: The book id
+      responses: 
+        200: 
+          description: The Book 
+
+/book/search:
+  get:
+      tags:
+        - Book
+      summary: Get the Book by title search
+      parameters:
+        - in: query
+          name: book
+          type: string
+          required: true
+          description: The book title
+      responses: 
+        200: 
+          description: The Book 

@@ -1,0 +1,17 @@
+components:
+  schemas:
+    UserModel:
+      type: object
+      properties: 
+        first_name:
+          type: string
+        last_name:
+          type: string
+        phone:
+          type: string
+        email:
+          type: string
+        password:
+          type: string
+        image:
+          type: string
