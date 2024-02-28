@@ -1,4 +1,4 @@
-export default en = {
+export default {
    languages: [
       {
          id: 1,

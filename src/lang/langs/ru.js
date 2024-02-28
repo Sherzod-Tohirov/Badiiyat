@@ -1,4 +1,4 @@
-export default uz = {
+export default {
    languages: [
       {
          id: 1,
