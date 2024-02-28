@@ -1,4 +1,4 @@
-export const ru = {
+export default uz = {
    languages: [
       {
          id: 1,

@@ -26,5 +26,5 @@ createRoot(document.getElementById('root')).render(
           </MeProvider>
         </TokenProvider>
     </BrowserRouter>
-  ,
+  
 )

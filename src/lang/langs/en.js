@@ -1,4 +1,4 @@
-export const en = {
+export default en = {
    languages: [
       {
          id: 1,
@@ -200,6 +200,20 @@ export const en = {
         title: "Welcome back"
       }
   },
+  login : {
+   title: "Login",
+   desc: "Do not have an account?",
+   button: {
+      title: "Create"
+   }
+},
+register: {
+   title: "Register",
+   desc: "Already have an account?",
+   button: {
+      title: "Create"
+   }
+},
   input: {
    first_name: {
       title: "First name",

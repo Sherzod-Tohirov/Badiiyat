@@ -27,7 +27,9 @@ export const Header = () => {
             console.log(err)
         });
     }, []);
-    const {t} = useTranslation();
+    const {t} = {...useTranslation()};
+    console.log(useTranslation());
+    console.log(t);
     const [subListShow, setSubListShow] = useState(false);
     return (
     <>
@@ -48,7 +50,7 @@ export const Header = () => {
                         <div className="relative">
                             <button onClick={() => setSubListShow(prev => !prev)} className='header__btn'>
                                 {
-                                    user && <img className='rounded-full object-cover' src={(user?.image && `http://localhost:5000/${user?.image}`) ||  defaultImage} width={49} height={49} />
+                                    user && <img className='rounded-full object-cover w-[49px] h-[49px]' src={(user?.image && `http://localhost:5000/${user?.image}`) ||  defaultImage} />
                                 }
                             </button>
                             <HeaderSubMenu show={subListShow} setShow={setSubListShow} />
